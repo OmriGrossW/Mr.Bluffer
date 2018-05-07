@@ -1,0 +1,8 @@
+compile server and reactor:
+~/bin/mvn compile
+~/bin/mvn exec:java -Dexec.mainClass="Reactor.Reactor" -Dexec.args="2000 20"
+~/bin/mvn exec:java -Dexec.mainClass="Server.TBGPserver" -Dexec.args="2000"
+
+compile client:
+make
+bin/playerClient 127.0.0.1 2000
